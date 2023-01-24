@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP</title>
+    <link rel="stylesheet" href="styles.css">
+   
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    
+
+</head>
+
+<body>
+
+    <h2>Informe de incidencia</h2>
+    <main>
+        <div class="div.img" id="contenedor-imagenes">
+            <img src="imagenes/oficina.jpg" class="img" alt="" srcset="">
+        </div>
+
+        <div class="form-div">
+            <form action="" method="" >
+                <label for="">Tipo de incidencia</label>
+                <select onchange="cambiarImagen()"  name="" id="select">
+                    <option value="oficina">Oficina</option>
+                    <option value="Produccion">Produccion</option>
+                    <option value="Distribucion">Distribucion</option>
+                </select>
+                <br>
+                <br>
+                <div class="grupo-correcto validacion-estado" id="formulario">  
+
+                    <label id="numberLabel" for="">Número de serie:</label>
+                    <input type="text" placeholder="111NNNNA" name="Serie" class="grupo-input" id="form" maxlength="8" onkeyup="checkValidNumber()" onfocus="clearError()" />
+                    
+                    
+
+                </div>
+
+                <p class="formulario-input-error">Empieza con 3 números,4 letras mayúsculas y acaba con los números 1 y
+                    2 o A </p>
+                <br>
+                <br>
+
+
+
+
+
+
+
+
+            </form>
+
+
+
+
+
+            <div class="button-div">
+
+                <button id="btnMostrarDescripcion" onclick="show()">Mostrar descripción</button>
+                <textarea class="text-area" name="" id="textarea" style="display:none" cols="30" rows="10" placeholder="Escriba aquí la descripción de su incidencia."></textarea>
+                <button type="submit" class="buton-bot" onclick="NumeroSerie()" >Enviar Datos</button>
+
+            </div>
+
+          
+
+          <div id="errormensaje"  >
+                <p><i class="fa-solid fa-triangle-exclamation" ></i><b>ERROR:</b>Datos incorrectos</p>
+               
+                
+            </div>
+
+             <div id="correcto" >
+                <p><i class="fa-solid fa-check"></i><b class="color">BIEN:</b>Los datos son correctos</p> 
+                
+            </div> 
+
+ 
+
+
+
+
+
+
+        </div>
+
+
+        <script src="scripts.js"></script>
+        <script src="https://kit.fontawesome.com/ca76cf5e44.js" crossorigin="anonymous"></script>
+        
+
+
+      
+
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+
+h2{
+text-align: center;
+padding-bottom: 20px;
+font-size: 50px;
+color: white;
+background-color: rgb(10, 235, 10);
+padding-top: 20px;
+margin-left: 60px;
+margin-right: 60px;
+
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    background-attachment:fixed;
+  
+   
+    
+}
+
+#select{
+
+  margin-left: 70px;
+  /* border: 2px solid black; */
+}
+
+.img{
+
+    width: 400px;
+    height: 400px;
+  
+    
+   
+}
+
+button{
+
+    background-color:rgb(10, 235, 10);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 300px;
+    cursor: pointer;
+    
+}
+
+#textarea{
+
+width: 290px;
+
+
+}
+
+#textarea{
+
+     margin-top: 10px;
+    resize: none;
+}
+
+.button-div{
+
+display: flex;
+flex-direction: column;
+padding-top: 10px;
+
+
+
+}
+
+button{
+
+padding-bottom: 5px;
+
+
+}
+
+.buton-bot{
+
+
+    margin-top: 20px;
+}
+
+.input-serie{
+
+    
+         
+    border: 3px solid transparent;
+    line-height: 20px;
+    outline: none;
+    
+    
+}
+
+.input-serie:focus{
+  
+    outline:2px solid rgb(10, 235, 10);
+    border-radius: 2px;
+    
+
+}
+
+ body{
+   
+    background-color: rgb(238, 234, 234);
+
+ }
+
+ b{
+
+    color: red;
+ }
+ .color{
+    color: rgb(0, 0, 11);
+ }
+
+ #errormensaje{
+
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0px 15px;
+    border-radius: 3px;
+    width: 60%;
+    display: none;
+    
+ }
+
+ /* #error{
+
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0px 15px;
+    border-radius: 3px;
+    width: 60%;
+    
+ } */
+.formulario-input-error{
+
+}
+
+.grupo{
+
+
+    
+    height: 20px;
+    
+}
+
+.grupo i{
+
+position: absolute;
+margin-top: 5px;
+margin-right: 60px;
+opacity: 0;
+
+
+}
+.grupo-input{
+
+    position: relative;
+    right: 5px;
+    
+    outline: green; 
+    
+}
+label{
+
+    padding-right: 5px;
+}
+
+.grupo-correcto.validacion-estado{
+    color: black;
+    opacity: 1;
+    
+
+
+
+}
+
+.grupo-correcto.Novalidacion-estado{
+
+color: red;
+opacity: 1;
+
+}
+
+#correcto{
+
+
+    height: 45px;
+    line-height: 45px;
+    background: rgb(48, 199, 48);
+    padding: 0px 15px;
+    border-radius: 3px;
+    width: 60%;
+    display: none;
+
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .Error{
+        display: block;
+    }
+}
+
+.Error{
+
+    display: none;
+}
+
